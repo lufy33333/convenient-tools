@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: #020617;
+  --panel: rgba(15, 23, 42, 0.74);
+  --border: rgba(148, 163, 184, 0.16);
+  --text: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(99, 102, 241, 0.18), transparent 28%),
+    linear-gradient(180deg, #020617 0%, #020617 100%);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+textarea,
+input {
+  appearance: none;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: "Syne", sans-serif;
+}
